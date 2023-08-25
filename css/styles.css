@@ -11,6 +11,11 @@ body {
   padding: 1rem;
   color: rgba(191, 231, 252, 0.8);
 }
+
+.wrapper-form{
+  text-align: center;
+}
+
  /* animations*/ 
 .card {
     display: flex;
@@ -89,8 +94,12 @@ body {
 }
 .myself{
   filter: grayscale(100%);
-  ;
+  background-color:#fff;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto; 
 }
+
 .myself:hover{
   filter: none
 }
