@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Project 4</title>
+  </head>
+  <body>
+<!--bootstrap nav-->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(252, 213, 213, 0.9)">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">staaronf.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/staaronf">GitHub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/aaron-stevens-560009257">LinkIn</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+              My Other Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="./products/single-products.html" target="_blank">Single Products Page</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/about-us.html" target="_blank">About Us Page</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/contact-us.html" target="_blank">Contact Us Page</a></li>
+            <!--  <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#" target="_blank"></a></li> -->
+              
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#Contact" tabindex="-1" aria-disabled="true">Contact me</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+      </header>
+    <div class="grid-container">
+      <div class="card">
+        
+            <a id="about"></a>
+            <div class="heading">
+            <h4 style="text-align: center;"><u>About me</u></h4><br>
+            </div>
+            <div class="myself">
+            <img src="./media/selfiesquare-gimp.jpg" alt="myself" width=200 height=200>
+            </div>
+            <div class="para">
+            <p>Living in San Diego, California. I currently work as an Amazon 
+                Associate 
+                at a fulfillment center named SAN3. My ideal job would be 
+                working as a software 
+                developer at Amazon. I made this site with the 
+                purpose of applying what I've learned so far in my 
+                software development 
+                classes and plan to add in further styling and new elements as I learn them.<br><br>
+                There are links in the navigation at the top of this page where you can see some and the work I've done
+            
+            </p>
+            </div>
+    <br></div>
+      <div class="card">
+        <div class="heading">
+        <h4 style="text-align: center;"><u>More info about this page:</u></h4><br>
+        </div>
+        <div class="para">
+        <p>You can navigate through this page by clicking any of the 4 links in the navigation
+         at the top. The different sections include: Home, About Me, Blog 
+        and Contact. When you click one my header links it should jump to that 
+        specific section of the page. This page will constantly change as I 
+        incorporate new stuff I learn into my pages code.
+        </p><br>
+        <p>Here I'll explain what each section of the site contains. Home, this brings
+        you to my intro at the top which contains brief details about the purpose
+        and mission of the site. About me, this has detailed info about myself and
+        of my personal exerpiences during my software development journey. Contact, 
+        you may submit your contact information or feedback for me to receive.
+        </p>
+        </div>
+    </div>
+        
+      <div class="card">
+        <div class="heading">
+            <u><b><h4 style="text-align: center;">Projects Coming Soon:</h4></b></u><br>
+            </div>
+            <div class="para">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor velit mollitia reprehenderit commodi eos, culpa vel tenetur dicta dolore autem qui excepturi minima. Neque voluptas culpa, mollitia quae quibusdam maiores. <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus similique quam est doloremque dolorum! Rerum pariatur incidunt nulla, eveniet at ullam neque dolore voluptates asperiores repellat, inventore rem facere beatae!
+            </p>
+            </div>
+      </div>
+      <div class="card"><a id="contact"></a>
+        <div class="heading">
+        <h4 style="text-align: center;"><u>Contact</u></h4><br>
+        </div>
+        <form action="action.php" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="fname" name="firstname" placeholder="Your name"><br>
+        
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" placeholder="Write something.." style="height:100px">
+            
+            <input type="submit" value="Submit">
+          </form></div>
+      <div class="card">
+        <div class="heading">
+            <h4 style="text-align: center;"><u>Le Blog</u></h4>
+            <h6 style="text-align: left;"><i>August 5, 2023</i></h6>
+                        <div class="para">
+                        <p>It's been almost a whole month learning with Correlation One!
+                            I must admit, before starting with C1, the whole idea of learning 
+                            to code was extremely intimidating. So far though, with our excellent
+                            intructors and supportive TA's, it hasn't been as difficult as I feared 
+                            at least so far. As of this post, we've learned HTML, advanced HTML and are 
+                            currently in the middle of learning CSS. I would say what I've found most
+                            interesting is using selectors to target certain parts of code to style, 
+                            along with all the different ways we can style our page using CSS.
+                
+                        </p>
+                        </div>
+    </div>
+    
+  </body>
+</html>
