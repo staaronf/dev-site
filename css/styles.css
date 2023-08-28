@@ -4,25 +4,34 @@ body {
     background: rgb(19, 19, 19);
     color: #fff;
     font-family: 'Jetbrains Mono', sans-serif;
-    background-image: url(old.png);
+    background-image: url(../media/old.png);
     
+}
+
+.p{
+  margin-left: 1rem;
 }
 
 .navbar{
   margin-top: 1rem;
   border-radius: 1rem;
   padding: 0.8rem;
-  color: rgba(191, 231, 252, 0.8);
-  background-color: rgba(191, 231, 252, 0.8);
+  color: rgba(203, 166, 247, 0.9);
+  background-color: rgba(203, 166, 247, 0.8);
   animation: cardEntrance 400ms ease-out;
   animation-fill-mode: backwards;
+  margin: 0.5rem;
+}
+
+.navbar:hover {
+  box-shadow: #353535;
+  background-color: rgba(203, 166, 247, 0.9);
 }
 
 .grid-container {
   padding-top: 2.5rem;
   height: auto;
-  margin-bottom: 1rem;
-
+  margin: 1rem;
   display: grid;
   gap: 1rem;
 
@@ -62,7 +71,7 @@ body {
     justify-content: left;
     align-items: left;
     background: #353535;
-    font-size: 1.0rem;
+    font-size: 0.9rem;
     color: #fff;
     box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
     height: 100%;
@@ -78,12 +87,13 @@ body {
   
 .card:hover {
     box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
-    transform: translateY(-3px) scale(1.1);
+    transform: translateY(-0.5rem) scale(1.05);
+    background-color: rgba(180, 190, 254, 0.9);
  }
 
 
 .card {
-  background-color: rgba(191, 231, 252, 0.8);
+  background-color: rgba(180, 190, 254, 0.8);
   animation: cardEntrance 500ms ease-out;
   animation-fill-mode: backwards;
 }
