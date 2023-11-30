@@ -43,8 +43,7 @@ body {
     'a a b c'
     'a a L L'
     'd d L L'
-    'd d L L'
-    'e e e e';
+    'd d L L';
   grid-template-rows: repeat(4, 25%);
   grid-template-columns: auto auto auto auto;
 
