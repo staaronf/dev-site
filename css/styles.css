@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
 
 body {
-    background: rgb(19, 19, 19);
+    background: rgb(174, 160, 247);
     color: #fff;
     font-family: 'Jetbrains Mono', sans-serif;
-    background-image: url(../media/old.png);
+    /* background-image: url(../media/old.png); */
     
 }
 
@@ -28,6 +28,8 @@ body {
   background-color: rgba(203, 166, 247, 0.9);
 }
 
+
+
 .grid-container {
   padding-top: 2.5rem;
   height: auto;
@@ -41,7 +43,8 @@ body {
     'a a b c'
     'a a L L'
     'd d L L'
-    'd d L L';
+    'd d L L'
+    'e e e e';
   grid-template-rows: repeat(4, 25%);
   grid-template-columns: auto auto auto auto;
 
@@ -122,7 +125,7 @@ body {
 
 .myself{
   filter: grayscale(100%);
-  background-color: aquamarine;
+  background-color: rgb(0, 0, 0);
   overflow: hidden;
   border-radius: 0.8rem;
   margin-left: auto;
@@ -132,3 +135,89 @@ body {
 .myself:hover{
   filter: none;
 }
+
+/*DarkLight Toggle*/
+.dark-mode {
+  background-color: rgb(57, 48, 113);
+  color: rgb(255, 255, 255);
+  transition: all 0.4s ease-in;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 3.75rem;
+  height: 2.13rem;
+  margin-bottom: 0.63rem;
+  margin-inline: auto;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: all 0.4s ease-in;
+  border-radius: 2.13rem;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.63rem;
+  width: 1.63rem;
+  left: 0.25rem;
+  bottom: 0.25rem;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 2px #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.63rem);
+}
+
+projects{            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .image-box {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text-section {
+            margin-top: 10px;
+        }
