@@ -203,7 +203,7 @@ projects{
             display: flex;
             justify-content: space-around;
             align-items: center;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             padding: 20px;
         }
 
