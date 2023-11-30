@@ -111,13 +111,20 @@
         
       <div class="card">
         <div class="heading">
-            <u><b><h4 style="text-align: center;">Coming soon: Calculator </h4></b></u><br>
+            <u><b><h4 style="text-align: center;">Age Calculator </h4></b></u><br>
+            <div class="calc_container">
+              <h1>Age Calculator</h1>
+              <form>
+                <label for="birthdate">Enter your birthdate:</label>
+                <small>Use the format shown below</small>
+                <input type="text" id="birthdate" name="birthdate" placeholder="MM/DD/YYYY" required>
+                <div class="button-group">
+                  <button type="submit" class="submit">CALCULATE</button>
+                  <button type="reset" class="reset">RESET</button>
+                </div>
+              </form>
+              <p id="age"></p>
             </div>
-            <div class="para">
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor velit mollitia reprehenderit commodi eos, culpa vel tenetur dicta dolore autem qui excepturi minima. Neque voluptas culpa, mollitia quae quibusdam maiores. <br><br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus similique quam est doloremque dolorum! Rerum pariatur incidunt nulla, eveniet at ullam neque dolore voluptates asperiores repellat, inventore rem facere beatae!
-            </p>
             </div>
       </div>
       <div class="card"><a id="contact"></a>
@@ -164,5 +171,6 @@
 
     
         <script src="/javascript/darklight.js"></script>
+        <script src="/javascript/calc.js"></script>
   </body>
 </html>
