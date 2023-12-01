@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
+    
     <title>staaronf.com</title>
   </head>
   <body>
@@ -46,6 +47,7 @@
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
           </li>
         </ul>
+
         <!-- <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
@@ -53,6 +55,15 @@
       </div>
     </div>
   </nav>
+
+  <div class="container">
+    <h2 class="mode-status">Currently in Light Mode</h2>
+    <label class="toggle-switch">
+      <input type="checkbox" id="mode-toggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
       </header>
     <div class="grid-container">
       <div class="card">
@@ -100,13 +111,20 @@
         
       <div class="card">
         <div class="heading">
-            <u><b><h4 style="text-align: center;">Projects Coming Soon:</h4></b></u><br>
+            <u><b><h4 style="text-align: center;">Age Calculator </h4></b></u><br>
+            <div class="calc_container">
+              <h1>Age Calculator</h1>
+              <form>
+                <label for="birthdate">Enter your birthdate:</label>
+                <small>Use the format shown below</small>
+                <input type="text" id="birthdate" name="birthdate" placeholder="MM/DD/YYYY" required>
+                <div class="button-group">
+                  <button type="submit" class="submit">CALCULATE</button>
+                  <button type="reset" class="reset">RESET</button>
+                </div>
+              </form>
+              <p id="age"></p>
             </div>
-            <div class="para">
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor velit mollitia reprehenderit commodi eos, culpa vel tenetur dicta dolore autem qui excepturi minima. Neque voluptas culpa, mollitia quae quibusdam maiores. <br><br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus similique quam est doloremque dolorum! Rerum pariatur incidunt nulla, eveniet at ullam neque dolore voluptates asperiores repellat, inventore rem facere beatae!
-            </p>
             </div>
       </div>
       <div class="card"><a id="contact"></a>
@@ -128,21 +146,31 @@
 
       <div class="card">
         <div class="heading">
-            <h4 style="text-align: center;"><u>Le Blog</u></h4>
-            <h6 style="text-align: left;"><i>August 5, 2023</i></h6>
-                        <div class="para">
-                        <p>It's been almost a whole month learning with Correlation One!
-                            I must admit, before starting with C1, the whole idea of learning 
-                            to code was extremely intimidating. So far though, with our excellent
-                            intructors and supportive TA's, it hasn't been as difficult as I feared 
-                            at least so far. As of this post, we've learned HTML, advanced HTML and are 
-                            currently in the middle of learning CSS. I would say what I've found most
-                            interesting is using selectors to target certain parts of code to style, 
-                            along with all the different ways we can style our page using CSS.
-                
-                        </p>
-                        </div>
+            <h4 style="text-align: center;"><u>Projects</u></h4>
+            <div class="image-container">
+
+              <div class="image-box">
+                <img src="/media/odin-recipes.png" width="150rem" height="150rem" alt="Project 2">
+                <div class="text-section"><h4>My first web page🥺</h4><br> For the lulz, only going up from here!<br> <a href="https://github.com/staaronf/The-Odin-Project/tree/main/recipes-project">Simple Recipe List</a></div>
+            </div>
+
+              <div class="image-box">
+                  <img src="/media/website_snip.png" width="150rem" height="150rem" alt="Project 1">
+                  <div class="text-section"><h4>My website</h4><br> Learn about me and my projects here!<br> <a href="https://github.com/staaronf/staaronf.com">staaronf.com</a></div>
+              </div>
+            
+              <div class="image-box">
+                <img src="/media/coming_soon.jpg" width="150rem" height="150rem" alt="Project 3">
+                  <div class="text-section"><h4>Project 3</h4><br> Description<br> <a href="">GitHub Link</a></div>
+              </div>
+                        
     </div>
+    </div>
+
     
+
+    
+        <script src="/javascript/darklight.js"></script>
+        <script src="/javascript/calc.js"></script>
   </body>
 </html>
