@@ -182,13 +182,49 @@
       <button class="quiz-button" data-correct="false">69</button>
   
       <div id="answer" style="text-align: center;"></div>
-  </div>
+  </div><br><Br>
       
-    
+    <!--Map start-->
+
+    <div id='map-card' class="card">
+      <div class="heading">
+          <h4 style="text-align: center;"><u>Map</u></h4>
+
+          <div id="map"></div>
+
+
+    </div>
+      </div>
 
     
 <h1></h1>
+
+<!--google maps-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaZjMiO0rDH3XfbLbYW_HlBIBa_0B0yXQ&callback=initMap"></script>
+    <script>
+      function initMap() {
+          // options
+          var mapOptions = {
+              center: { lat: 32.579409473749514, lng: -117.1054701753569 },
+              zoom: 12
+          };
+
+          // new map instance
+          var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  
+          // a marker 
+          var marker = new google.maps.Marker({
+              position: { lat: 32.579409473749514, lng: -117.1054701753569 },
+              map: map,
+              title: 'Marker'
+          });
+      }
+  </script>
+  
+  <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  
+  <!--other scripts-->  
     <script src="/javascript/quiz.js"></script>
     <script src="/javascript/darklight.js"></script>
     <script src="/javascript/calc.js"></script>

@@ -44,7 +44,9 @@ body {
     'a a L L'
     'd d L L'
     'e e e e'
-    'e e e e';
+    'e e e e'
+    'f f f f'
+    'f f f f';
   grid-template-rows: repeat(8, 25%);
   grid-template-columns: auto auto auto auto;
 
@@ -121,10 +123,14 @@ body {
   grid-area: e;
   animation-delay: 500ms;
 }
+.card:nth-child(5) {
+  grid-area: f;
+  animation-delay: 600ms;
+}
 
 .card:last-child {
   grid-area: L;
-  animation-delay: 600ms;
+  animation-delay: 700ms;
 }
 
 .myself{
@@ -338,9 +344,16 @@ projects{
 
       button {
           display: block;
-          width: 100rem;
+          width: 100%;
           padding: 1rem;
           margin: 1rem;
           font-size: 16px;
           cursor: pointer;
       }
+
+      /* map */
+
+      #map {
+        height: 500px;
+        width: 100%;
+ 
