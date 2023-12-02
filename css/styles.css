@@ -42,8 +42,10 @@ body {
     'a a b c'
     'a a b c'
     'a a L L'
-    'd d L L';
-  grid-template-rows: repeat(4, 25%);
+    'd d L L'
+    'e e e e'
+    'e e e e';
+  grid-template-rows: repeat(8, 25%);
   grid-template-columns: auto auto auto auto;
 
 }
@@ -115,10 +117,14 @@ body {
   grid-area: d;
   animation-delay: 400ms;
 }
+.card:nth-child(5) {
+  grid-area: e;
+  animation-delay: 500ms;
+}
 
 .card:last-child {
   grid-area: L;
-  animation-delay: 500ms;
+  animation-delay: 600ms;
 }
 
 .myself{
@@ -323,3 +329,18 @@ projects{
           font-size: 1.5rem;
           margin-top: 1.25rem;
         }
+
+        /*quiz*/
+
+      quiz-container {
+        text-align: center;
+      }
+
+      button {
+          display: block;
+          width: 100rem;
+          padding: 1rem;
+          margin: 1rem;
+          font-size: 16px;
+          cursor: pointer;
+      }
