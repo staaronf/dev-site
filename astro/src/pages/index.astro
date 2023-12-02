@@ -1,0 +1,123 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="Home">
+  <main class="main container">
+</header>
+<div class="grid-container">
+  <div class="card">
+	
+		<a id="about"></a>
+		<div class="heading">
+		<h4 style="text-align: center;"><u>About me</u></h4><br>
+		</div>
+		<div class="myself">
+		<img src="./media/selfiesquare-gimp.jpg" alt="myself" width="300rem" height="300rem">
+		</div><br><br>
+		<div class="para">
+		<p>Living in San Diego, California. I currently work as an Amazon 
+			Associate 
+			at a fulfillment center named SAN3. My ideal job would be 
+			working as a software 
+			developer at Amazon. I made this site with the 
+			purpose of applying what I've learned so far in my 
+			software development 
+			classes and plan to add in further styling and new elements as I learn them.<br><br>
+			There are links in the navigation at the top of this page where you can see some and the work I've done
+		
+		</p>
+		</div>
+<br></div>
+  <div class="card">
+	<div class="heading">
+	<h4 style="text-align: center;"><u>More info about this page:</u></h4><br>
+	</div>
+	<div class="para">
+	<p>You can navigate through this page by clicking any of the 4 links in the navigation
+	 at the top. The different sections include: Home, About Me, Blog 
+	and Contact. When you click one my header links it should jump to that 
+	specific section of the page. This page will constantly change as I 
+	incorporate new stuff I learn into my pages code.
+	</p><br>
+	<p>Here I'll explain what each section of the site contains. Home, this brings
+	you to my intro at the top which contains brief details about the purpose
+	and mission of the site. About me, this has detailed info about myself and
+	of my personal exerpiences during my software development journey. Contact, 
+	you may submit your contact information or feedback for me to receive.
+	</p>
+	</div>
+</div>
+	
+  <div class="card">
+	<div class="heading">
+		<u><b><h4 style="text-align: center;">Age Calculator </h4></b></u><br>
+		<div class="calc_container">
+		  <h1>Age Calculator</h1>
+		  <form>
+			<label for="birthdate">Enter your birthdate:</label>
+			<small>Use the format shown below</small>
+			<input type="text" id="birthdate" name="birthdate" placeholder="MM/DD/YYYY" required>
+			<div class="button-group">
+			  <button type="submit" class="submit">CALCULATE</button>
+			  <button type="reset" class="reset">RESET</button>
+			</div>
+		  </form>
+		  <p id="age"></p>
+		</div>
+		</div>
+  </div>
+  <div class="card"><a id="contact"></a>
+	<div class="wrapper-form">
+	<div class="heading">
+	<h4 style="text-align: center;"><u>Contact</u></h4><br>
+	</div>
+	<form action="action.php" method="POST">
+		<label for="name">Name:</label><br>
+		<input type="text" id="fname" name="firstname" placeholder="Your name"><br>
+	
+		<label for="subject">Subject:</label><br>
+		<input type="text" name="subject" placeholder="Write something.." style="height:6.25rem">
+		<br>
+		<input type="submit" value="Submit">
+	  </form></div>
+	</div>
+
+
+  <div class="card">
+	<div class="heading">
+		<h4 style="text-align: center;"><u>Projects</u></h4>
+		<div class="image-container">
+
+		  <div class="image-box">
+			<img src="/media/odin-recipes.png" width="150rem" height="150rem" alt="Project 2">
+			<div class="text-section"><h4>My first web page🥺</h4><br> For the lulz, only going up from here!<br> <a href="https://github.com/staaronf/The-Odin-Project/tree/main/recipes-project">Simple Recipe List</a></div>
+		</div>
+
+		  <div class="image-box">
+			  <img src="/media/website_snip.png" width="150rem" height="150rem" alt="Project 1">
+			  <div class="text-section"><h4>My website</h4><br> Learn about me and my projects here!<br> <a href="https://github.com/staaronf/staaronf.com">staaronf.com</a></div>
+		  </div>
+		
+		  <div class="image-box">
+			<img src="/media/coming_soon.jpg" width="150rem" height="150rem" alt="Project 3">
+			  <div class="text-section"><h4>Project 3</h4><br> Description<br> <a href="">GitHub Link</a></div>
+		  </div>
+					
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
+  </main>
+
+
+  <script is:inline slot="script" src="/js/index.js"></script>
+</Layout>
+
+
+

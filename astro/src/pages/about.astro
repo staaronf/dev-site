@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="About">
+  <main class="main container">
+    <h1>About Us</h1>
+    <a href="/index.html">Home</a><br><br>
+    <img src="/media/info.jpg" alt="info">
+    <img src="/media/graph.jpg" alt="graph">
+  </main>
+
+  <script is:inline slot="script" src="/js/about/index.js"></script>
+</Layout>
+
+
+<style>
+  h1 {
+    color: darkgreen;
+  }
+</style>
